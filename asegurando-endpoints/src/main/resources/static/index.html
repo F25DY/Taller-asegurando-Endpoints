@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asegurando Endpoints</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <main class="page-shell">
+        <section class="hero" aria-labelledby="page-title">
+            <p class="eyebrow">Spring Boot · Seguridad</p>
+            <h1 id="page-title">Asegurando endpoints</h1>
+            <p class="intro">Prueba los endpoints públicos y protegidos de la aplicación.</p>
+
+            <div class="endpoint-grid">
+                <article class="endpoint-card public-card">
+                    <div class="card-heading">
+                        <span class="status-dot" aria-hidden="true"></span>
+                        <span class="method">GET</span>
+                        <span class="access-label">Público</span>
+                    </div>
+                    <h2>/gfg/welcome</h2>
+                    <p>Disponible sin autenticación.</p>
+                    <a class="endpoint-link" href="/gfg/welcome">Probar endpoint <span aria-hidden="true">→</span></a>
+                </article>
+
+                <article class="endpoint-card secured-card">
+                    <div class="card-heading">
+                        <span class="status-dot" aria-hidden="true"></span>
+                        <span class="method">GET</span>
+                        <span class="access-label">Protegido</span>
+                    </div>
+                    <h2>/gfg</h2>
+                    <p>Requiere las credenciales configuradas en Spring Security.</p>
+                    <a class="endpoint-link" href="/gfg">Iniciar sesión <span aria-hidden="true">→</span></a>
+                </article>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <span class="footer-mark" aria-hidden="true">●</span>
+            <span>Servicio activo · Asegurando Endpoints</span>
+        </footer>
+    </main>
+</body>
+</html>

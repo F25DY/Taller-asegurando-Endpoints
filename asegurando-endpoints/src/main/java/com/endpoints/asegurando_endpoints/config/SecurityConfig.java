@@ -18,6 +18,8 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
             .authorizeHttpRequests(auth -> auth
+                // Vista y estilos públicos
+                .requestMatchers("/", "/index.html", "/styles.css").permitAll()
                 // Endpoint público
                 .requestMatchers("/gfg/welcome").permitAll()
                 // Endpoint protegido
