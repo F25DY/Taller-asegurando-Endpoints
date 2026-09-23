@@ -26,6 +26,7 @@ public class SecurityConfig {
                 .anyRequest().authenticated()
             )
             .formLogin(form -> form
+                .defaultSuccessUrl("/gfg", true)
                 .permitAll()
             )
             .httpBasic(basic -> {});
