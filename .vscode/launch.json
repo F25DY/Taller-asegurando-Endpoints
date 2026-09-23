@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-AsegurandoEndpointsApplication<asegurando-endpoints>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.endpoints.asegurando_endpoints.AsegurandoEndpointsApplication",
+            "projectName": "asegurando-endpoints",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
